@@ -59,17 +59,15 @@ public class CFBook extends JavaPlugin {
 		log.info("[CFBook] Permissions found. Using " + ((Permissions)permissionsPlugin).getDescription().getFullName());
 	}
 	
-	public boolean pCheck(String node, Player player) {
-		Plugin permissionsPlugin = this.getServer().getPluginManager().getPlugin("Permissions");
+	public static boolean pCheck(String node, Player player) {
+		Plugin permissionsPlugin = Bukkit.getServer().getPluginManager().getPlugin("Permissions");
 		if(permissionsPlugin == null) {
 			return player.isOp();
 		} else {
-			permissionHandler.has(player, node);
+			CFBook.permissionHandler.has(player, node);
 		}
 		return false;
 	}
-	
-	
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String [] args) {
 		Player p = (Player) sender;
@@ -131,7 +129,7 @@ public class CFBook extends JavaPlugin {
 		
 		if(label.equalsIgnoreCase("cfbversion")) {
 			p.sendMessage(ChatColor.GREEN + "CFBook");
-			p.sendMessage("Version: 1.00");
+			p.sendMessage("Version: 1.15");
 		}
 		
 		if(label.equalsIgnoreCase("time")) {
