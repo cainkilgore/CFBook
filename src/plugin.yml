@@ -1,0 +1,39 @@
+name: CFBook
+version: 1.00
+author: CainFoool
+main: me.cain.cfbook.CFBook
+commands:
+   tp:
+      description: Teleport to somebody
+   tphere:
+      description: Teleport somebody to you
+   cfbversion:
+      description: Shows the version to all players.
+   scare:
+      description: Shoots a lightning bolt down to players
+   time:
+      description: Change the server time
+   lightningaxe:
+      description: Left click with a gold axe and lightning shows! (harmless)      
+   creative:
+      description: Creative on or off
+   weather:
+      description: weather sun or rain
+   rocket:
+      description: Shoot a player into the sky
+   clearinv:
+      description: clears your inventory
+   lockdown:
+      description: Locks the server!
+   smob:
+      description: Spawn a mob
+   world:
+      description: Do a bunch of stuff
+   heal:
+      description: Heal yourself/other players
+   nick:
+      description: Change your nickname
+   kickall:
+      description: Kicks all players
+   shutdown:
+      description: Shuts the server down with a nice little message!
